@@ -1,0 +1,105 @@
+.Body{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Title1{
+    position: absolute;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 60px;
+    font-size: 190px;
+    font-weight: 600;
+    left: 3%;
+}
+.text-wrapper{
+  position: absolute;
+  top: 75%;
+  left: 2%;
+  max-height: 100px;
+  max-width: 250px;
+}
+p{
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+#Center{
+    position: absolute;
+    height: 600px;
+    width: 450px;
+    top: 20%;
+    right: 35%;
+}
+.Pics-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 43%;
+    gap: 10px;
+}
+.Pic-wrapper{
+    background-color: black;
+    border-radius: 10px;
+}
+.Pic-wrapper:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.Pic{
+    height: 150px;
+    width: 120px;
+}
+.text-wrapper{
+    position: absolute;
+    height: 100px;
+    width: fit-content;
+}
+.button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #333;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+  
